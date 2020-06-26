@@ -1,80 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --main-font: 'Pacifico', cursive;
-}
-
-header {
-  height: 100vh;
-  width: 100%;
-  background-image: url("home-page.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-}
-
-.main-header {
+.header {
   text-align: center;
-  transition: 0.5s;
-}
-
-.main-header h1 {
-  font-size: 3em;
-  font-family: var(--main-font);
-  color: #5F5F80;
-  margin: 20px;
-}
-
-.main-header hr {
+  margin: 150px;
+  border: 2px solid black;
   width: 50%;
-  margin: auto;
-  padding: 5px;
-  background: #E1F06C;
+  height: 30vh;
 }
 
-.main-header h3 {
-  margin: 20px0;
-  font-size: 2rem;
+.header:hover {
+  -webkit-box-shadow: 6px 2px 55px 12px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 6px 2px 55px 12px rgba(0, 0, 0, 0.66);
+  box-shadow: 6px 2px 55px 12px rgba(0, 0, 0, 0.66);
 }
+.header p{
+margin: 30px;
 
-.main-header input {
-  width: 90%;
-  padding: 1rem;
-  margin: 20px 0px;
-  border: none;
-  border-bottom: 2px solid #5F5F80;
-  font-size: 1.3rem;
-  background: transparent;
-  outline: none;
+}.header p input{
+ border: none;
+  width: 60%;
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 2rem;
+ box-sizing: unset;
+
 }
-
-.main-header button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  background: #80A2Ef;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 1.2s;
-  margin: 20px;
-  outline: none;
+.header p input:hover{
+  border-bottom: 2px solid violet;
 }
-
-.main-header button:hover {
-  transform: scale(1.2);
-}
-
-.main-header:hover {
-  -webkit-box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
-  -moz-box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
-  box-shadow: -10px 0px 44px 7px rgba(0, 0, 0, 0.54);
+.header button{
+  width: 50%;
+  height: 3rem;
+  color:#fff;
+  background: red;
 }
